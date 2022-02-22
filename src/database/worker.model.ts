@@ -1,10 +1,6 @@
-import Bee from "./bee.module";
+import Bee from "./bee.model";
 
 export default class Worker extends Bee {
-    constructor(id: number, hp: number) { 
-        super(id,hp)
-    }
-        
     attack(): void {
             this.hp = 0.7*this.hp;
         }
