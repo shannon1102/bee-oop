@@ -1,10 +1,10 @@
-import React from 'react'
 import Bee from '../database/bee.model';
-import OneBee from './Bee';
+import { OneBee } from './Bee';
 function BeeList(prop: { list: Bee[] }) {
+  console.log(prop.list)
   return (
     <div>
-      <table className='styled-table'>
+      <table className='table'>
         <thead>
         <tr>
             <th>Id</th>
@@ -20,9 +20,7 @@ function BeeList(prop: { list: Bee[] }) {
          }
         </tbody>
       </table>
-
     </div>
-
   )
 }
 export default BeeList;

@@ -1,9 +1,9 @@
-.App {
+.app {
   text-align: center;
 }
 
 
-.App-header {
+.header {
   
   background-color: hsl(220, 12%, 90%);
   min-height: 100vh;
@@ -14,7 +14,7 @@
   font-size: calc(10px + 2vmin);
   color: rgb(109, 26, 26);
 }
-.styled-table {
+.table {
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
@@ -22,48 +22,45 @@
   min-width: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-.styled-table thead tr {
+.table thead tr {
   background-color: #009879;
   color: #ffffff;
   text-align: left;
 }
-.styled-table th,
-.styled-table td {
+.table th,
+.table td {
     padding: 12px 15px;
 }
-.styled-table tbody tr {
+.table tbody tr {
   border-bottom: 1px solid #dddddd;
 }
 
-.styled-table tbody tr:nth-of-type(even) {
+.table tbody tr:nth-of-type(even) {
   background-color: #f3f3f3;
 }
 
-.styled-table tbody tr:last-of-type {
+.table tbody tr:last-of-type {
   border-bottom: 2px solid #009879;
 }
-.styled-table tbody tr.active-row {
+.table tbody tr.active-row {
   font-weight: bold;
   color: #009879;
 }
-.bee-strong-status {
+
+.bee-status {
   width: auto;
   height: 30px;
+}
+.bee-status--strong{
   background-color: #009879;
 }
-.bee-mid-status {
-  width: auto;
-  height: 30px;
+.bee-status--mid {
   background-color: #ffd23c;
 }
-.bee-weak-status {
-  width: auto;
-  height: 30px;
+.bee-status--weak {
   background-color: #92072a;
 }
-.bee-die-status {
-  width: auto;
-  height: 30px;
+.bee-status--die {
   background-color: #2f3332;
 }
 .bee-ui {
@@ -73,26 +70,17 @@
   width: 200px;;
   height: 100%;
 }
-/* .bee {
-  flex:5;
-  width: 100%;
-  height: 100%;
-}
-.bee-item {
-  flex:1;
-  width: 40%;
-  height: 40%;
-} */
-.bee-img {
+.bee-ui__bee-img {
   flex: 2;
   width:20%;
   height:20%;
 }
-.bee-item-img {
-  flex:1;
+.bee-ui__bee-item-img {
+  flex: 1;
   width:20%;
   height:20%;
 }
+
 .bottom {
   display: flex;
   flex-direction: column;
@@ -103,21 +91,13 @@
   height: 10%;
   background-color: #f2f6f5;
 }
-.action-btn {
- 
+.btn {
   flex: 1;
 }
-.btn{
+.btn__action{
   background-color: rgb(46, 128, 84);
   width: 100%;
   height: 100%;
   font-size: large;
   color: hsl(28, 100%, 97%);
-}
-.image-btn {
-
-  width: 100%;
-  height:auto;
-  padding: 20;
-  margin-bottom: 100px;
 }
